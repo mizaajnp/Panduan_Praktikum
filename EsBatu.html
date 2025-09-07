@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum Pencairan Es Batu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* Gradient background */
+      .hero-gradient {
+        background: linear-gradient(
+          135deg,
+          #e0f7fa 0%,
+          #b2ebf2 50%,
+          #80deea 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Floating snow effect */
+      .snowflake {
+        position: absolute;
+        top: -10px;
+        color: #fff;
+        font-size: 1rem;
+        animation: fall linear infinite;
+        opacity: 0.8;
+      }
+      @keyframes fall {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* Card hover */
+      .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      /* Step hover highlight */
+      .step:hover {
+        background-color: #f0f9ff;
+        border-radius: 10px;
+        transition: background 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header Section -->
+    <!-- ...existing code... -->
+    <header
+      class="hero-gradient min-h-screen flex items-center justify-center text-center px-4 relative"
+    >
+      <div data-aos="fade-up" class="max-w-4xl mx-auto z-10">
+        <!-- Logo Bar Atas Kanan -->
+        <div class="absolute top-8 right-8 flex space-x-4 z-20">
+          <img
+            src="logo1.png"
+            alt="Logo 1"
+            class="h-12 w-auto object-contain"
+          />
+          <img
+            src="logo2.png"
+            alt="Logo 2"
+            class="h-12 w-auto object-contain"
+          />
+          <img
+            src="logo3.png"
+            alt="Logo 3"
+            class="h-12 w-auto object-contain"
+          />
+        </div>
+        <h1
+          class="text-5xl md:text-6xl font-bold text-blue-800 mb-4 drop-shadow-lg mt-28"
+        >
+          Praktikum Pencairan Es Batu
+        </h1>
+        <p class="text-xl md:text-2xl text-blue-700 mb-10 mt-10">
+          Panduan praktikum untuk mengetahui adanya perubahan pada percobaan
+          pencairan es
+        </p>
+        <img
+          src="ESbg.png"
+          alt="Ilustrasi Es Batu"
+          class="mx-auto mt-10 rounded-xl shadow-lg w-full max-w-md"
+        />
+      </div>
+    </header>
+    <!-- ...existing code... -->
+
+    <!-- Tujuan Section -->
+    <section id="tujuan" class="py-20 px-4">
+      <div class="max-w-4xl mx-auto">
+        <div
+          data-aos="fade-up"
+          class="bg-white rounded-xl shadow-lg p-8 card-hover"
+        >
+          <div class="flex items-center mb-6">
+            <div class="bg-blue-100 p-3 rounded-full mr-4">
+              <i data-feather="target" class="w-6 h-6 text-blue-600"></i>
+            </div>
+            <h2 class="text-3xl font-bold text-blue-800">Tujuan Praktikum</h2>
+          </div>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start">
+              <i
+                data-feather="check-circle"
+                class="w-5 h-5 text-green-500 mr-2 mt-1"
+              ></i>
+              <span
+                >Mengetahui adanya perubahan pada percobaan pencairan es</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alat dan Bahan Section -->
+    <section id="alat-bahan" class="py-20 bg-blue-50 px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2
+          data-aos="fade-up"
+          class="text-3xl font-bold text-center text-blue-800 mb-12"
+        >
+          Alat dan Bahan
+        </h2>
+        <div data-aos="fade-up" class="grid md:grid-cols-2 gap-8">
+          <!-- Alat -->
+          <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+            <div class="flex items-center mb-6">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i data-feather="tool" class="w-6 h-6 text-blue-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-blue-800">Alat</h3>
+            </div>
+            <ul class="space-y-4">
+              <li class="flex items-center hover:scale-105 transition">
+                <i
+                  data-feather="droplet"
+                  class="w-5 h-5 text-blue-400 mr-3"
+                ></i>
+                <span>Gelas kimia</span>
+              </li>
+              <li class="flex items-center hover:scale-105 transition">
+                <i data-feather="layers" class="w-5 h-5 text-blue-400 mr-3"></i>
+                <span>Tissue/Lap kain</span>
+              </li>
+              <li class="flex items-center hover:scale-105 transition">
+                <i data-feather="clock" class="w-5 h-5 text-blue-400 mr-3"></i>
+                <span>Stopwatch</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bahan -->
+          <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+            <div class="flex items-center mb-6">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i data-feather="box" class="w-6 h-6 text-blue-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-blue-800">Bahan</h3>
+            </div>
+            <ul class="space-y-4">
+              <li class="flex items-center hover:scale-105 transition">
+                <i
+                  data-feather="cloud-snow"
+                  class="w-5 h-5 text-blue-400 mr-3"
+                ></i>
+                <span>Es Batu</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Langkah Kerja Section -->
+    <section id="langkah-kerja" class="py-20 px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2
+          data-aos="fade-up"
+          class="text-3xl font-bold text-center text-blue-800 mb-12"
+        >
+          Langkah Kerja
+        </h2>
+        <div
+          data-aos="fade-up"
+          class="bg-white rounded-xl shadow-lg p-8 card-hover"
+        >
+          <ol class="space-y-6">
+            <li class="flex items-start step">
+              <div
+                class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4"
+              >
+                1
+              </div>
+              <p class="font-medium text-gray-800">Siapkan alat dan bahan</p>
+            </li>
+            <li class="flex items-start step">
+              <div
+                class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4"
+              >
+                2
+              </div>
+              <p class="font-medium text-gray-800">
+                Pastikan setiap alat bersih dan kering
+              </p>
+            </li>
+            <li class="flex items-start step">
+              <div
+                class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4"
+              >
+                3
+              </div>
+              <p class="font-medium text-gray-800">
+                Masukkan es batu ke dalam gelas kimia
+              </p>
+            </li>
+            <li class="flex items-start step">
+              <div
+                class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4"
+              >
+                4
+              </div>
+              <p class="font-medium text-gray-800">
+                Biarkan es batu pada suhu ruang dalam gelas kimia selama 10
+                menit
+              </p>
+            </li>
+            <li class="flex items-start step">
+              <div
+                class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4"
+              >
+                5
+              </div>
+              <p class="font-medium text-gray-800">
+                Amati perubahan sebelum dan sesudah pencairan yang terjadi
+              </p>
+            </li>
+            <li class="flex items-start step">
+              <div
+                class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4"
+              >
+                6
+              </div>
+              <p class="font-medium text-gray-800">
+                Kerjakan LKPD sesuai pocket book di kertas masing-masing satu
+                setiap kelompok
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-8 px-4"
+    >
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-lg font-semibold">
+          Panduan Praktikum Kimia – Pencairan Es Batu
+        </p>
+      </div>
+      <!-- Tombol Kembali di bawah tengah -->
+      <div class="mt-8 flex justify-center">
+        <a
+          href="index.html"
+          class="inline-flex items-center px-6 py-2 bg-white text-blue-800 rounded-full shadow hover:bg-blue-600 transition font-semibold text-lg"
+        >
+          <i data-feather="arrow-left" class="mr-2"></i>
+          Kembali
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init({ duration: 900, easing: "ease-in-out", once: true });
+      feather.replace();
+    </script>
+  </body>
+</html>

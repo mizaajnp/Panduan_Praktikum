@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum Pencampuran Cuka + Soda Kue</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+      .chemistry-bg {
+        background-image: linear-gradient(
+            135deg,
+            rgba(173, 216, 230, 0.2) 0%,
+            rgba(144, 238, 144, 0.2) 100%
+          ),
+          url("sodabg.png");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Header/Cover Section -->
+    <header class="py-20 px-4 text-center text-white bg-blue-400">
+      <!-- Logo Bar Atas Kanan -->
+      <div class="absolute top-6 right-8 flex space-x-4 z-10">
+        <img src="logo1.png" alt="Logo 1" class="h-12 w-auto object-contain" />
+        <img src="logo2.png" alt="Logo 2" class="h-12 w-auto object-contain" />
+        <img src="logo3.png" alt="Logo 3" class="h-12 w-auto object-contain" />
+      </div>
+      <div
+        class="max-w-4xl mx-auto backdrop-blur-sm bg-black/30 p-8 rounded-xl"
+        data-aos="fade-down"
+      >
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Praktikum Pencampuran Cuka + Soda Kue
+        </h1>
+        <p class="text-xl md:text-2xl">
+          Panduan praktikum untuk mengamati perubahan pencampuran cuka (CH₃COOH)
+          dan soda kue (NaHCO₃)
+        </p>
+        <img
+          src="sodabg.png"
+          alt="Ilustrasi Cuka dan Soda Kue"
+          class="mx-auto mt-8 rounded-xl shadow-lg w-full max-w-md"
+        />
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 space-y-12">
+      <!-- Tujuan Praktikum Section -->
+      <section class="bg-white rounded-xl shadow-lg p-6" data-aos="fade-up">
+        <div class="flex items-center mb-6">
+          <div class="bg-blue-500 p-3 rounded-full mr-4">
+            <i data-feather="target" class="text-white"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800">Tujuan Praktikum</h2>
+        </div>
+        <ul class="space-y-2 pl-2">
+          <li class="flex items-start">
+            <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+            <span
+              >Mengetahui adanya perubahan pada percobaan pencampuran cuka dan
+              soda kue</span
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- Alat dan Bahan Section -->
+      <section class="bg-white rounded-xl shadow-lg p-6" data-aos="fade-up">
+        <div class="flex items-center mb-6">
+          <div class="bg-purple-500 p-3 rounded-full mr-4">
+            <i data-feather="tool" class="text-white"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800">Alat dan Bahan</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4 flex items-center">
+              <i data-feather="box" class="mr-2 text-blue-600"></i> Alat
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <i data-feather="check" class="text-green-500 mr-2"></i>
+                Erlenmeyer
+              </li>
+              <li class="flex items-center">
+                <i data-feather="check" class="text-green-500 mr-2"></i>
+                Balon
+              </li>
+              <li class="flex items-center">
+                <i data-feather="check" class="text-green-500 mr-2"></i>
+                Spatula
+              </li>
+              <li class="flex items-center">
+                <i data-feather="check" class="text-green-500 mr-2"></i>
+                Gelas ukur
+              </li>
+              <li class="flex items-center">
+                <i data-feather="check" class="text-green-500 mr-2"></i>
+                Tissue/Lap kain
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4 flex items-center">
+              <i data-feather="droplet" class="mr-2 text-red-600"></i> Bahan
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <i data-feather="check" class="text-green-500 mr-2"></i>
+                Cuka (CH₃COOH)
+              </li>
+              <li class="flex items-center">
+                <i data-feather="check" class="text-green-500 mr-2"></i>
+                Soda Kue (NaHCO₃)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Langkah-Langkah Section -->
+      <section class="bg-white rounded-xl shadow-lg p-6" data-aos="fade-up">
+        <div class="flex items-center mb-6">
+          <div class="bg-green-500 p-3 rounded-full mr-4">
+            <i data-feather="list" class="text-white"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800">
+            Langkah-Langkah Praktikum
+          </h2>
+        </div>
+        <ol class="space-y-4 pl-2">
+          <li class="flex items-start">
+            <span
+              class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0"
+              >1</span
+            >
+            <span>Siapkan alat dan bahan</span>
+          </li>
+          <li class="flex items-start">
+            <span
+              class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0"
+              >2</span
+            >
+            <span>Pastikan setiap alat bersih dan kering</span>
+          </li>
+          <li class="flex items-start">
+            <span
+              class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0"
+              >3</span
+            >
+            <span>Masukkan 1 sendok makan baking soda ke dalam balon</span>
+          </li>
+          <li class="flex items-start">
+            <span
+              class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0"
+              >4</span
+            >
+            <span>Ambil 20 mL asam cuka dengan gelas ukur</span>
+          </li>
+          <li class="flex items-start">
+            <span
+              class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0"
+              >5</span
+            >
+            <span>Masukkan asam cuka 20 mL ke dalam erlenmeyer</span>
+          </li>
+          <li class="flex items-start">
+            <span
+              class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0"
+              >6</span
+            >
+            <span>Pasangkan mulut balon pada mulut erlenmeyer</span>
+          </li>
+          <li class="flex items-start">
+            <span
+              class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0"
+              >7</span
+            >
+            <span>Masukkan baking soda dari balon ke erlenmeyer</span>
+          </li>
+          <li class="flex items-start">
+            <span
+              class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0"
+              >8</span
+            >
+            <span>Amati perubahan sebelum dan sesudah pencampuran</span>
+          </li>
+          <li class="flex items-start">
+            <span
+              class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0"
+              >9</span
+            >
+            <span
+              >Kerjakan LKPD sesuai pocket book di kertas masing-masing</span
+            >
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-400 text-white py-8 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-lg font-semibold">
+          Panduan Praktikum Kimia – Pencairan Es Batu
+        </p>
+      </div>
+      <!-- Tombol Kembali di bawah tengah -->
+      <div class="mt-8 flex justify-center">
+        <a
+          href="index.html"
+          class="inline-flex items-center px-6 py-2 bg-white text-blue-800 rounded-full shadow hover:bg-blue-600 transition font-semibold text-lg"
+        >
+          <i data-feather="arrow-left" class="mr-2"></i>
+          Kembali
+        </a>
+      </div>
+    </footer>
+    <!-- ...existing code... -->
+
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+      feather.replace();
+    </script>
+  </body>
+</html>
